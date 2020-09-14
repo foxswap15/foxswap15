@@ -12,7 +12,7 @@ html,
 body {
     background-color: #fff;
     color: #555;
-    font-family: 'Lato', 'Arial', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
@@ -24,18 +24,29 @@ body {
     margin: 0 auto;
 }
 
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
 /* Main Nav */
 
 .main-nav {
     float: right;
     list-style: none;
     margin-top: 15px;
+    text-align: center;
 }
 
 .main-nav li {
     display: inline-block;
     margin-left: 40px;
-    
+    position: relative;
 }
 
 .main-nav li a:link,
@@ -56,14 +67,24 @@ body {
     border-bottom: 2px solid #e67e22;
 }
 
+.sub-menu li {
+    display: none;
+}
+
+.sub-menu {
+    position: absolute;
+}
+
+.main-nav:hover .sub-menu {
+    display: block;
+}
+
+
 
 /* HEADER */
 header {
     background-color: #152836;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    background-attachment: fixed;
+
 }
 
 .logo {
@@ -98,13 +119,10 @@ h1 {
     float: left;
 }
 
-.text-header {
-    margin-top: 90px;
-}
 .text-header p {
     font-size: 90%;
     line-height: 145%;
-    color: #fff;
+
 }
 
 .calculator img {
@@ -113,7 +131,8 @@ h1 {
     box-shadow: 2px 2px 8px #ccc;
     -webkit-box-shadow: 2px 2px 8px #ccc;
     -moz-box-shadow: 2px 2px 8px #ccc;
-    float: right;
+    margin-bottom: 20px;
+    align-items: center;
 }
 
 
@@ -128,6 +147,7 @@ h1 {
     border-radius: 6px;
     -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
+    margin-top: 20px;
 }
 
 .btn-full:link,
@@ -205,20 +225,22 @@ h3 {
 
 .col-left img {
     height: 50px;
+    margin-top: 5px;
+    margin-left: -40px;
 }
 
 
 .col-right img {
     height: 50px;
+    margin-top: 5px;
+    margin-left: -25px;
 }
 
-ul {
+ ul {
     list-style: none;
 }
 
-.col-right ul li p {
-    float: right;
-}
+
 
 .col-right ul li {
     margin-top: 50px;
@@ -231,14 +253,17 @@ ul {
 }
 
 .col-left ul li p {
-    float: right;
+    float: left;
     padding: 10px;
-    margin-right: 22px;
+    margin-left: 10px;
+    margin-top: -60px;
 }
 
 .col-right ul li p {
-    float: right;
+    float: left;
     padding: 10px;
+    margin-left: 25px;
+    margin-top: -60px;
 }
 /*----------  FOX TOKEN ---------*/
 .fox-token {
@@ -346,7 +371,7 @@ footer ul li:hover {
 
 .subcribe {
     
-    background-color: #20b58b;
+    background-color: #207960;
     border: none;
     font-weight: 400;
     padding: 3px;
