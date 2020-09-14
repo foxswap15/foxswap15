@@ -39,7 +39,7 @@ body {
 .main-nav {
     float: right;
     list-style: none;
-    margin-top: 15px;
+    margin-top: 18px;
     text-align: center;
 }
 
@@ -79,7 +79,29 @@ body {
     display: block;
 }
 
+/* sticky nav */
 
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(4, 35, 58, 0.98);
+    box-shadow: 0 1px 1px #rgb(21, 40, 54);
+}
+
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 8px 0;
+    color: #555;
+    
+}
+
+.sticky .fox-swap span {
+    color: #555;
+    
+}
 
 /* HEADER */
 header {

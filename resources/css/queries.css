@@ -39,7 +39,7 @@
     } */
     body {font-size: 16px;}
     section {
-        30px 0
+        padding: 30px 0;
     }
 
     .roadmap img {
@@ -51,6 +51,6 @@
 /* small phones from 0 to 480px */
 @media only screen and (max-width: 480px) {
     .roadmap img {
-        width: 480px;
+        width: 100%;
     }
 }
