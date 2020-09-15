@@ -13,6 +13,11 @@
 
     }
 
+    .roadmap-img {
+        width: 1140px;
+        align-items: center;
+    }
+
 }
 
 /* Small table to big tablet: from 768 to 1023px */
@@ -25,16 +30,17 @@
     section {
         padding: 60px 0;
     }
-    .roadmap img {
-        width: 1023px;
-    }
 
     .text-header p:first-child {
         margin-top: 95px;
     }
 
     .calculator img {
-        margin-left: 50%wh;
+        width: 90vmin;
+    }
+
+    .roadmap-img {
+        width: 90vmin;
     }
 
 }
@@ -65,6 +71,7 @@
         float: left;
         margin-left: 35px;
         margin-top: 25px;
+        display: none;
     }
 
     .main-nav li {

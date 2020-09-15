@@ -1,9 +1,9 @@
 
 $( document ).ready(function() {
-    $('.js--nav-icon').click(function() {
-        var nav = $('.js--main-nav');
-        nav.slideToggle(200); 
-    })
+     $('.js--nav-icon').click(function() {
+         var nav = $('.js--main-nav');
+         nav.slideToggle(200); 
+     })
 
 
     $('.js--scoll').waypoint(function(direction) {
@@ -15,10 +15,5 @@ $( document ).ready(function() {
     }, {
       offset: '60px;'
     });
-
-    
-
-        
-
 
 });
