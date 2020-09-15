@@ -79,6 +79,22 @@ body {
     display: block;
 }
 
+/* Main NAV*/
+
+.mobile-nav-icon {
+    float: right;
+    margin-top: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
+
+}
+
+
 /* sticky nav */
 
 .sticky {
@@ -87,19 +103,19 @@ body {
     left: 0;
     width: 100%;
     background-color: rgba(4, 35, 58, 0.98);
-    box-shadow: 0 1px 1px #rgb(21, 40, 54);
+    box-shadow: 0 1px 1px rgb(21, 40, 54);
 }
 
 
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited {
     padding: 8px 0;
-    color: #555;
+    color: #dfdfdf;
     
 }
 
 .sticky .fox-swap span {
-    color: #555;
+    color: #dfdfdf;
     
 }
 
@@ -370,7 +386,7 @@ tfoot {
 /* Footer */
 
 footer {
-    background-color: #565656;
+    background-color: rgba(4, 35, 58, 0.98);
 }
 
 footer ul li {
@@ -393,7 +409,7 @@ footer ul li:hover {
 
 .subcribe {
     
-    background-color: #207960;
+    background-color: #0c2d35;
     border: none;
     font-weight: 400;
     padding: 3px;
@@ -401,6 +417,10 @@ footer ul li:hover {
     border-radius: 5px;
     outline: none;
 }
+.subcribe:hover {
+    color: aqua;
+}
+
 
 input[type=email] {
     outline: none;
