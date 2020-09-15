@@ -28,6 +28,15 @@
     .roadmap img {
         width: 1023px;
     }
+
+    .text-header p:first-child {
+        margin-top: 95px;
+    }
+
+    .calculator img {
+        margin-left: 50%wh;
+    }
+
 }
 
 
